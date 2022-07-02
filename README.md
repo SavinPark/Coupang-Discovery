@@ -1,11 +1,10 @@
-### Coupang Discovery
+## Coupang Discovery
 쿠팡 웹페이지의 < 오늘의 발견 > 영역을 디자인 가이드 요구사항에 맞게 마크업 작업한 결과물입니다.
 
 <br/>
 
 📅 기간 : 2022. 05. 12
 
-<br/>
 <br/>
 
 🎨  Design guide
