@@ -1,0 +1,110 @@
+/* CSS 작성 */
+
+/* 제목 */
+.discovery-title-area {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.discovery-title-area>h2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 115%;
+}
+
+.discovery-title-area>h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 115%;
+}
+
+.discovery-title-area>.divider {
+  margin: 0 10px;
+}
+
+.discovery-title-area>h3,
+.discovery-title-area>.divider {
+  color: var(--color-gray-600);
+}
+
+/* 상품 */
+.discovery-item {
+  position: relative;
+  float: left;
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-500);
+  box-sizing: border-box;
+}
+.discovery-item.column1 {
+  width: 243px;
+  height: 310px;
+}
+.discovery-item.column1 img {
+  position: absolute;
+  width: 200px;
+  height: 282px;
+  left: 21px;
+  top: 14px;
+}
+.discovery-item:nth-child(3),
+.discovery-item:nth-child(4),
+.discovery-item:nth-child(5),
+.discovery-item:nth-child(6) {
+  margin: 16px 0;
+}
+.discovery-item:nth-child(1),
+.discovery-item:nth-child(3),
+.discovery-item:nth-child(4),
+.discovery-item:nth-child(5),
+.discovery-item:nth-child(7),
+.discovery-item:nth-child(8) {
+  margin-right: 16px;
+}
+
+.discovery-item.column2 {
+  width: 502px;
+  height: 310px;
+}
+
+.discovery-item.column2 img {
+  position: absolute;
+  width: 446px;
+  height: 270px;
+  left: 28px;
+  top: 20px;
+}
+
+.discovery-item-btn {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  left: 20px;
+  top: 248px;
+  background: rgba(0, 0, 0, 0.2) url("/assets/icon/angle-right-square.svg") no-repeat;
+  z-index: 9;
+  transition-property: width, color, background;
+  transition-duration: 0.3s;
+}
+
+.discovery-item:hover,
+.discovery-item:focus {
+  border: 1px solid var(--color-blue-600);
+}
+
+.discovery-item:hover .discovery-item-btn,
+.discovery-item:focus .discovery-item-btn {
+  width: 112px;
+  color: var(--color-white);
+  background: var(--color-blue-600) url("/assets/icon/angle-right-square.svg") no-repeat;
+  background-position: right;
+}
+
+.discovery-item:hover .discovery-item-btn::before,
+.discovery-item:focus .discovery-item-btn::before {
+  content: '구매하기';
+  position: absolute;
+  left: 20px;
+  top: 12px;
+  color: var(--color-white);
+}
