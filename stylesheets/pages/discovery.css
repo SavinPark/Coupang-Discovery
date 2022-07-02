@@ -81,7 +81,7 @@
   height: 42px;
   left: 20px;
   top: 248px;
-  background: rgba(0, 0, 0, 0.2) url("/assets/icon/angle-right-square.svg") no-repeat;
+  background: rgba(0, 0, 0, 0.2) url("../assets/icon/angle-right-square.svg") no-repeat;
   z-index: 9;
   transition-property: width, color, background;
   transition-duration: 0.3s;
@@ -96,7 +96,7 @@
 .discovery-item:focus .discovery-item-btn {
   width: 112px;
   color: var(--color-white);
-  background: var(--color-blue-600) url("/assets/icon/angle-right-square.svg") no-repeat;
+  background: var(--color-blue-600) url("../assets/icon/angle-right-square.svg") no-repeat;
   background-position: right;
 }
 
